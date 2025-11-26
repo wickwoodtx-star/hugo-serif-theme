@@ -2,7 +2,7 @@ baseURL = "/"
 themesDir = "themes"
 theme = "hugo-serif-theme"
 languageCode = "en-us"
-title = "Hugo Serif Theme"
+title = "Wickwood Handcrafts"
 
 [module]
   [module.hugoVersion]
@@ -10,71 +10,92 @@ title = "Hugo Serif Theme"
     min = "0.55.0"
 
 [params]
-  # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id. If you have Google Analytics included in your GTM tags don't put your GA ID here. Otherwise your data might be useless.
+  # In most cases you will only want to set the google_analytics_id OR the google_tag_manager_id.
+  # If you have Google Analytics included in your GTM tags don't put your GA ID here.
   google_analytics_id = ""
   google_tag_manager_id = ""
   favicon = "favicon-32x32.svg"
 
   [params.homepage]
     sticky_header = true
-    show_contact_box = true      # show / hide the contaxt box on the homepage
-    show_services_button = false # show / hide the "view all services" button
+    show_contact_box = true      # show / hide the contact box on the homepage
+    show_services_button = false # hide original "view all services" button
 
   [params.logo]
     mobile = "images/logo/logo-mobile.svg"
     mobile_height = "36px"
     desktop = "images/logo/logo.svg"
     desktop_height = "36px"
-    alt = "Serif - A Hugo Business Theme"
+    alt = "Wickwood Handcrafts"
 
   [params.fonts]
     # sets the google font link in layouts/partials/google-fonts.html
-    google_fonts = 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap'
+    google_fonts = "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;700&display=swap"
     heading = "Playfair Display"
     base = "Source Sans Pro"
 
+  # Organic, wood-friendly palette
   [params.colors]
-    primary = "#f24088"
-    black = "#2f2f41"
-    white = "#ffffff"
-    white_offset = "#f6f7ff"
-    grey = "#5C5A5A"
+    # Primary accent – muted forest green for buttons/links
+    primary = "#365546"
+
+    # Main text color – soft charcoal
+    black = "#2B2B2B"
+
+    # Base background – warm linen
+    white = "#F5F0E8"
+
+    # Section background – light warm tan
+    white_offset = "#E3D6C5"
+
+    # Neutral grey for secondary text
+    grey = "#8A7F70"
 
   [params.seo]
-    meta_twitter_site = "@zerostaticio"
-    meta_twitter_creator = "@zerostaticio"
-    meta_og_image = "https://www.zerostatic.io/theme/hugo-serif/hugo-serif-screenshot.png"
+    meta_twitter_site = "@wickwoodtx"
+    meta_twitter_creator = "@wickwoodtx"
+    meta_og_image = "images/og/wickwoodtx-og-default.jpg"
 
   [params.services]
-    summary_truncate = 120 # How many characters to include in the summary of the services before truncating
+    summary_truncate = 120
 
   [params.team]
-    summary_large_truncate = 120 # How many characters to include in the summary of the team bios (large layout) before truncating
+    summary_large_truncate = 120
 
   [params.footer]
-    copyright_text = 'Free Hugo theme by <a class="zerostatic" href="https://www.zerostatic.io">www.zerostatic.io</a>'
+    copyright_text = "© Wickwood Handcrafts – All rights reserved."
 
 [menu]
   # Main Menu
   [[menu.main]]
-    name = "Services"
-    url = "/services/"
+    name = "Home"
+    url = "/"
     weight = 1
 
   [[menu.main]]
-    name = "Team"
-    url = "/team/"
+    name = "Products"
+    url = "/products/"
     weight = 2
+
+  [[menu.main]]
+    name = "Woods"
+    url = "/woods/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Events"
+    url = "/events/"
+    weight = 4
 
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 5
 
   [[menu.main]]
     name = "Contact"
     url = "/contact/"
-    weight = 4
+    weight = 6
 
   # Footer Menu
   [[menu.footer]]
