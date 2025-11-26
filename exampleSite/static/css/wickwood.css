@@ -1,0 +1,64 @@
+/* Wickwood Handcrafts – Organic Storefront Styling */
+
+/* Global background + body text */
+body {
+  background-color: #F5F0E8; /* warm linen */
+  color: #2B2B2B;           /* soft charcoal */
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Hero section */
+.hero--wickwood {
+  padding: 4rem 0 3rem;
+  background: radial-gradient(
+    circle at top left,
+    #E3D6C5 0,
+    #F5F0E8 45%,
+    #F5F0E8 100%
+  );
+}
+
+/* Center and contain hero content */
+.hero__inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+.hero__copy h1 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #2B2B2B;
+}
+
+.hero__tagline {
+  font-size: 1.15rem;
+  max-width: 40rem;
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+  color: #2B2B2B;
+}
+
+/* Buttons */
+.button--primary {
+  background-color: #365546;
+  border-color: #365546;
+  color: white !important;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.button--primary:hover {
+  background-color: #2b4436;
+  border-color: #2b4436;
+}
+
+/* Optional: soften header/footer contrast */
+header,
+footer {
+  background-color: #F5F0E8 !important;
+  border: none !important;
+}
