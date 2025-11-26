@@ -1,0 +1,23 @@
+{{ define "base" -}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{ partial "head.html" . }}
+    <link rel="stylesheet" href="/css/wickwood.css">
+  </head>
+  <body class="site">
+    {{ partial "header.html" . }}
+
+    {{/* Show hero everywhere except products section */}}
+    {{ if not (eq .Section "products") }}
+      {{ partial "wickwood-hero.html" . }}
+    {{ end }}
+
+    <main role="main" class="site-main">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ partial "footer.html" . }}
+  </body>
+</html>
+{{- end }}
